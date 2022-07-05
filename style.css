@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Serif';
+    text-decoration: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.insta-landing{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.insta-cel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 34rem;
+}
+.insta-cel img{
+    height: 40rem;
+}
+.group-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    flex-wrap: wrap;
+}
+.group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid lightgrey;
+    width: 100%;
+    padding: 1rem 0;
+    flex-direction: column;
+}
+.group:nth-child(1){
+    height: 17rem;
+    margin-bottom: 10px;
+    margin: 0;
+}
+.insta-logo{
+    height: 3rem;
+}
+.foto-de-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 10px;
+}
+.foto-de-perfil img{
+    height: 9rem;
+}
+.instagram-login{
+    background-color: rgb(0, 149, 246);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.instagram-logout{
+    color: rgb(0, 149, 246);
+    margin-top: 1rem;
+}
+.not-account{
+    color: rgb(160, 160, 160);
+}
+.link-blue{
+    color: rgb(0, 149, 246);
+}
+.get-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.download-app{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+/*mobile*/
+@media(max-width: 1024px){
+    .insta-landing{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    .insta-cel{
+        display: none;
+    }
+    .insta-landing{
+        width: 90%;
+    }
+    .group{
+        border: 1px solid transparent;
+    }
+    .group-container{
+        width: 100%;
+    }
+}
